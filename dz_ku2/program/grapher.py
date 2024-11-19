@@ -58,9 +58,9 @@ def write_to_file(file_path, content):
 
 def main():
     parser = argparse.ArgumentParser(description="Визуализатор графа зависимостей Git.")
-    parser.add_argument("--repo-path", required=True, help="Путь к репозиторию.")
-    parser.add_argument("--output-file", required=True, help="Путь к файлу-результату.")
-    parser.add_argument("--date", required=True, help="Дата для фильтрации коммитов (например, '2024-11-19').")
+    parser.add_argument("--repo-path", required=True, help="Путь к анализируемому репозиторию.")
+    parser.add_argument("--output-file", required=True, help="Путь к файлу-результату в виде кода.")
+    parser.add_argument("--date", required=True, help="Дата коммитов в репозитории.")
 
     args = parser.parse_args()
 
